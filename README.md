@@ -62,7 +62,7 @@ Data-Source-API-Analyst-Test/
 
 ## Step 3: Data Extraction Using Google Colab
 
-Data extraction has been implemented using a Jupyter Notebook (`github_api_extraction.ipynb`) in Google Colab.
+Data extraction has been implemented using a [Jupyter Notebook](`github_api_extraction.ipynb`) in Google Colab.
 
 ### Features
 
@@ -113,7 +113,7 @@ def search_repositories(query, per_page=30, max_pages=5):
 
 ## Step 4: Troubleshooting Guide
 
-A troubleshooting guide (`Content/troubleshooting_guide.md`) has been created, covering common issues such as authentication errors, rate limit exceedances, and network errors.
+A troubleshooting [guide](`Content/troubleshooting_guide.md`) has been created, covering common issues such as authentication errors, rate limit exceedances, and network errors.
 
 ### Content
 
