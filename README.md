@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Client Requirements](#client-requirements)
 - [Step 1: Exploring GitHub API](#step-1-exploring-github-api)
 - [Step 2: Setting Up GitHub Repository](#step-2-setting-up-github-repository)
 - [Step 3: Data Extraction Using Google Colab](#step-3-data-extraction-using-google-colab)
@@ -13,6 +14,40 @@
 ## Introduction
 
 This repository contains the homework assignment for the role of API Data Source Analyst. The goal of the assignment is to demonstrate an understanding of working with APIs, the ability to handle data extraction requirements, and an approach to troubleshooting.
+
+## Client Requirements
+
+Core Functional Requirements
+
+- **Repository Search Functionality**
+    - The system must allow searching for public repositories on GitHub using various criteria, such as keywords, programming languages, or repository topics.
+    - Search results should include essential metadata, such as repository name, owner, description, stars, forks, and primary programming language.
+
+- **Commit History Retrieval**
+    - The system must retrieve the full commit history for a specified repository.
+    - Commit data must include commit messages, author information, timestamps, and commit SHA identifiers.
+    - The solution must handle paginated commit data efficiently.
+
+- **Repository Content Access**
+    - The system must support accessing the contents of a repository or specific files and directories within it.
+    - Metadata for files (e.g., file type, size, encoding) must be retrievable.
+    - The solution must allow navigation through nested directory structures.
+
+- **Authentication**
+    - The system must utilize a secure authentication mechanism through a GitHub Personal Access Token (PAT).
+    - The authentication process should ensure compliance with GitHub's API requirements and allow for extended rate limits for requests.
+
+- **Error Handling and Logging**
+    - The system must include robust error-handling mechanisms to address issues such as:
+        Authentication errors (401 Unauthorized).
+        Rate limit exceedances (403 Forbidden).
+        Invalid endpoints or parameters (404 Not Found).
+        Network issues (Connection Timeout or Connection Errors).
+    - Detailed logging must be implemented for all API interactions to facilitate debugging and monitoring.
+
+- **Rate Limit Management**
+    - The system must monitor API usage and implement mechanisms to handle rate limits effectively.
+    - If the rate limit is reached, the system should delay further requests until the reset period.
 
 ## Step 1: Exploring GitHub API
 
